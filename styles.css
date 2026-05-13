@@ -6,15 +6,12 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: #ffffff;
   color: #111;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,151 +20,63 @@ body {
 main {
   max-width: 640px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 3rem;
 }
 
-/* ───── Masthead ───── */
-
-.masthead {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 2rem;
-  margin-bottom: 4rem;
-  border-bottom: 1px solid #000;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.brand {
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: -0.01em;
-}
-
-.toc {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.9rem;
-}
-
-.toc a {
-  color: #111;
-  text-decoration: none;
-}
-
-.toc a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-/* ───── Intro ───── */
-
-.intro {
-  margin-bottom: 4rem;
-}
-
-.intro h1 {
+h1 {
   font-size: 2.25rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  line-height: 1.15;
 }
 
-.intro p {
-  font-size: 1.125rem;
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.lede {
+  margin-top: 0.75rem;
   color: #444;
+  font-size: 1.0625rem;
 }
 
-/* ───── Sections ───── */
-
-section + section {
-  margin-top: 3rem;
+p {
+  margin-top: 0.75rem;
 }
 
-section h2 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #666;
-  margin-bottom: 1rem;
+p:first-of-type {
+  margin-top: 0;
 }
-
-section p + p {
-  margin-top: 1rem;
-}
-
-section p {
-  font-size: 1rem;
-  max-width: 36rem;
-}
-
-/* ───── Lists ───── */
-
-.list {
-  list-style: none;
-  display: grid;
-  gap: 1rem;
-}
-
-.list li {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.list strong {
-  font-weight: 600;
-}
-
-/* ───── Links ───── */
 
 a {
   color: #111;
-}
-
-section a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
-section a:hover {
+a:hover {
   color: #555;
 }
 
-/* ───── Footer ───── */
-
 footer {
-  margin-top: 5rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
-  font-size: 0.85rem;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.875rem;
   color: #888;
 }
 
-/* ───── Responsive ───── */
-
 @media (max-width: 500px) {
   main {
-    padding: 2rem 1.25rem 3rem;
+    padding: 3rem 1.25rem 2.5rem;
   }
 
-  .masthead {
-    margin-bottom: 3rem;
-  }
-
-  .toc {
-    gap: 1rem;
-    font-size: 0.85rem;
-  }
-
-  .intro {
-    margin-bottom: 3rem;
-  }
-
-  .intro h1 {
+  h1 {
     font-size: 1.875rem;
   }
 }
